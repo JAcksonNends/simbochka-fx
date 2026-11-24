@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Термінал MetaTrader 5 | Simbochka FX</title>
+<meta name="description" content="Покрокова інструкція: вхід у рахунок у MetaTrader 5, пошук інструмента, відкриття, зміна і закриття позиції.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f0612'/%3E%3Cg fill='%23ff4f9a'%3E%3Crect x='6' y='12' width='5' height='12' rx='1'/%3E%3Crect x='13.5' y='6' width='5' height='14' rx='1'/%3E%3Crect x='21' y='10' width='5' height='10' rx='1'/%3E%3C/g%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700;900&family=Onest:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="apple-touch-icon" href="img/icon.png">
+<meta property="og:image" content="https://jacksonnends.github.io/simbochka-fx/img/logo.jpg">
+<link rel="stylesheet" href="style.css?v=3">
+</head>
+<body>
+
+<nav class="nav"><div class="nav-in">
+  <a class="brand" href="./"><img src="img/icon.png" alt="Simbochka"><i></i><span>Simb<b>ochka</b></span></a>
+  <div class="nav-links">
+    <a href="./">Як читати сетапи</a>
+    <a href="risk.html">Ризик-менеджмент</a>
+    <a class="on" href="terminal.html">Термінал MT5</a>
+  </div>
+</div></nav>
+
+<header class="hero"><div class="hero-in">
+  <div class="tag">Крок 1 · Покрокова інструкція</div>
+  <h1>Термінал<br><span class="g">MetaTrader 5</span></h1>
+  <p class="hero-sub">Усе по кроках: від входу в рахунок до відкриття і управління позицією. Торгуємо через <strong>ліцензованих брокерів FxPro і Vantage Markets</strong>.</p>
+  <div class="btn-row">
+    <a class="btn" href="https://apps.apple.com/app/metatrader-5/id413251709" target="_blank" rel="noopener">Завантажити для iOS</a>
+    <a class="btn-ghost" href="https://play.google.com/store/apps/details?id=net.metaquotes.metatrader5" target="_blank" rel="noopener">Завантажити для Android</a>
+  </div>
+</div></header>
+
+<main class="content">
+
+  <section class="section">
+    <div class="section-num">01 · Вхід</div>
+    <h2>Вхід у свій рахунок</h2>
+    <p>Дані рахунку (логін, пароль і сервер) брокер надсилає на пошту після реєстрації. Не знайшла лист - напиши менеджеру в <a href="https://t.me/simba_fx_bot" target="_blank" rel="noopener">@simba_fx_bot</a>.</p>
+    <div class="steps"><div class="step"><div class="step-n">1</div><div class="step-body">
+      <strong>Увійди в існуючий рахунок</strong>
+      <ol class="mini">
+        <li>Відкрий додаток і натисни іконку в <b>лівому верхньому куті</b></li>
+        <li>Обери <span class="k">Управління рахунками</span> → <span class="k">Увійти в існуючий рахунок</span></li>
+        <li>У пошуку брокера введи <b>FxPro</b> або <b>Vantage</b> (того, де ти реєструвалась) і обери зі списку</li>
+        <li>Введи <b>номер рахунку (логін)</b> і <b>пароль</b> з листа</li>
+        <li>Обери <b>сервер</b>, вказаний у листі, і натисни <span class="k">Увійти</span></li>
+      </ol>
+    </div><div></div></div></div>
+  </section>
+
+  <section class="section">
+    <div class="section-num">02 · Інструмент</div>
+    <h2>Знайти інструмент</h2>
+    <div class="steps"><div class="step"><div class="step-n">2</div><div class="step-body">
+      <strong>Додай інструмент у «Котирування»</strong>
+      <span>Внизу екрана відкрий вкладку <span class="k">Котирування</span> → натисни <span class="k">+</span> у правому верхньому куті → введи назву, наприклад <b>XAUUSD</b> або <b>GOLD</b> → натисни на інструмент, щоб додати його в список.</span>
+    </div><div></div></div></div>
+    <div class="note"><h4>💡 XAUUSD і GOLD - це одне й те саме</h4>Золото проти долара, просто дві назви одного інструмента. У різних брокерів може бути ще суфікс, наприклад XAUUSD+.</div>
+  </section>
+
+  <section class="section">
+    <div class="section-num">03 · Позиція</div>
+    <h2>Відкрити позицію</h2>
+    <div class="steps"><div class="step"><div class="step-n">3</div><div class="step-body">
+      <strong>Ринковий ордер - за поточною ціною</strong>
+      <ol class="mini">
+        <li>Натисни на інструмент у списку → <span class="k">Торгівля</span> (Trade)</li>
+        <li>Тип - <b>Ринкове виконання</b>: ордер виконається одразу за поточною ціною</li>
+        <li>Вкажи <b>обсяг у лотах</b> (рахуй <a href="risk.html#calc">калькулятором</a>)</li>
+        <li>Встанови <b>Stop Loss</b> і <b>Take Profit</b> із сетапу</li>
+        <li>Натисни <span class="k">Buy by Market</span> або <span class="k">Sell by Market</span></li>
+      </ol>
+    </div><div></div></div></div>
+    <div class="shot"><img src="img/sl-tp.jpg" alt="Вікно угоди в MT5"><div class="shot-cap">Лот у центрі, нижче <span class="warn">Stop Loss</span> і <span class="ok">Take Profit</span>, внизу кнопки Sell / Buy by Market.</div></div>
+  </section>
+
+  <section class="section">
+    <div class="section-num">04 · Відкладений ордер</div>
+    <h2>Вхід за заданою ціною</h2>
+    <p>У вікні торгівлі зміни тип на <strong>Відкладений ордер</strong>, обери підтип, вкажи ціну входу, SL і TP та натисни «Розмістити».</p>
+    <div class="grid2">
+      <div class="mini-card"><h4>Buy Limit / Sell Limit</h4><p>Вхід за кращою ціною: спрацює, коли ціна дійде до вигіднішого рівня, ніж поточний.</p></div>
+      <div class="mini-card"><h4>Buy Stop / Sell Stop</h4><p>Вхід на пробій: спрацює, коли ціна проб'є заданий рівень, у напрямку руху.</p></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-num">05 · Управління</div>
+    <h2>Змінити або закрити позицію</h2>
+    <div class="steps"><div class="step"><div class="step-n">5</div><div class="step-body">
+      <ol class="mini">
+        <li>Внизу відкрий вкладку <span class="k">Торгівля</span> (Trade) - там усі відкриті позиції</li>
+        <li>Натисни на позицію → <span class="k">Modify position</span>, щоб змінити <b>SL</b> і <b>TP</b></li>
+        <li>Лінії <b>SL</b> і <b>TP</b> на графіку можна перетягувати пальцем</li>
+        <li>Щоб закрити: натисни на позицію → <span class="k">Close position</span></li>
+      </ol>
+    </div><div></div></div></div>
+    <div class="pair">
+      <div class="shot"><img src="img/close-position.jpg" alt="Close position"><div class="shot-cap"><strong class="ok">Close position</strong> - закрити угоду</div></div>
+      <div class="shot"><img src="img/modify-position.jpg" alt="Modify position"><div class="shot-cap"><strong>Modify position</strong> - змінити стоп і тейк</div></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-num">06 · Відеоінструкція</div>
+    <h2>Подивись, як це виглядає 👇</h2>
+    <div class="player"><video controls playsinline preload="none" poster="videos/terminal-poster.jpg"><source src="videos/terminal.mp4" type="video/mp4">Твій браузер не підтримує відео - <a href="videos/terminal.mp4">завантажити</a></video></div>
+  </section>
+
+  <div class="steps">
+    <a class="step" href="./"><div class="step-n">2</div><div class="step-body"><strong>Наступний крок - як читати сетапи</strong><span>Точка входу, SL, TP і беззбиток</span></div><div class="step-go">→</div></a>
+  </div>
+</main>
+
+<footer>Simbochka FX · Симба · MetaTrader 5 · Торгівля пов'язана з ризиком втрати коштів.</footer>
+</body>
+</html>

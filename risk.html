@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ризик-менеджмент | Simbochka FX</title>
+<meta name="description" content="Правила, які зберігають депозит: точка входу, стоп-лосс, розмір лота, закриття руками і анти-лудка. З калькулятором лота.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f0612'/%3E%3Cg fill='%23ff4f9a'%3E%3Crect x='6' y='12' width='5' height='12' rx='1'/%3E%3Crect x='13.5' y='6' width='5' height='14' rx='1'/%3E%3Crect x='21' y='10' width='5' height='10' rx='1'/%3E%3C/g%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700;900&family=Onest:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="apple-touch-icon" href="img/icon.png">
+<meta property="og:image" content="https://jacksonnends.github.io/simbochka-fx/img/logo.jpg">
+<link rel="stylesheet" href="style.css?v=3">
+</head>
+<body>
+
+<nav class="nav"><div class="nav-in">
+  <a class="brand" href="./"><img src="img/icon.png" alt="Simbochka"><i></i><span>Simb<b>ochka</b></span></a>
+  <div class="nav-links">
+    <a href="./">Як читати сетапи</a>
+    <a class="on" href="risk.html">Ризик-менеджмент</a>
+    <a href="terminal.html">Термінал MT5</a>
+  </div>
+</div></nav>
+
+<header class="hero"><div class="hero-in">
+  <div class="tag">Simbochka · Ризик-менеджмент</div>
+  <h1>Правила, які<br><span class="g">зберігають депозит</span></h1>
+  <p class="hero-sub">Більшість новачків думає, що ризик-менеджмент - це просто поставити стоп-лосс. Насправді він починається ще <strong>до відкриття угоди</strong>.</p>
+</div></header>
+
+<main class="content">
+
+  <section class="section">
+    <div class="section-num">00 · Головне</div>
+    <h2>Що вирішує ризик-менеджмент</h2>
+    <ul class="list">
+      <li>чи варто взагалі заходити в позицію</li>
+      <li>яким обсягом заходити</li>
+      <li>де поставити стоп-лосс</li>
+      <li>де зафіксувати прибуток</li>
+      <li>коли зупинитись і зробити перерву</li>
+    </ul>
+    <div class="hl"><div class="t">Твоє головне завдання</div><p>Не заробити максимум на одній угоді. Завдання - <strong>зберегти депозит, пройти довгу серію угод і залишитися в грі.</strong></p></div>
+  </section>
+
+  <section class="section">
+    <div class="section-num">01 · Точка входу</div>
+    <h2>Коли заходити, а коли ні</h2>
+    <p>Ми з командою завжди даємо діапазон входу (або конкретну ціну), наприклад <strong>📍 4396</strong>.</p>
+    <div class="grid2">
+      <div class="mini-card bad"><h4>Ціна полетіла в профіт без тебе</h4><p>Для BUY вгору, для SELL вниз. Не заходь: ризик стає більшим, а результат гіршим.</p></div>
+      <div class="mini-card ok"><h4>Ціна пішла трохи в мінус від входу</h4><p>Для BUY вниз, для SELL вгору, але стоп ще не зачепила. Можна заходити: ризик менший, результат кращий.</p></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-num">02 · Стоп-лосс</div>
+    <h2>Стоп ставимо одразу</h2>
+    <p>Стоп-лосс ставиш одразу після входу або разом з відкриттям угоди. Його рівень уже є в сетапі, який ми даємо в каналі.</p>
+    <div class="grid2">
+      <div class="mini-card ok"><h4>Стоп можна</h4>
+        <ul class="list" style="margin:8px 0 0"><li>підтягнути в беззбиток</li><li>перевести в прибуток</li><li>залишити на початковому рівні</li></ul></div>
+      <div class="mini-card bad"><h4>Стоп НЕ можна</h4>
+        <ul class="list no" style="margin:8px 0 0"><li>відсувати далі в мінус</li><li>збільшувати після відкриття</li><li>прибирати з надією «зараз розвернеться»</li><li>перетворювати угоду на «довгострокову інвестицію»</li></ul></div>
+    </div>
+    <div class="shot"><img src="img/close-confirm.jpg" alt="Стоп і тейк у вікні угоди MT5"><div class="shot-cap">Stop Loss і Take Profit заповнюєш у вікні угоди <strong>до</strong> натискання Buy / Sell by Market.</div></div>
+    <a class="link-card" href="./#s2"><div class="link-ic">📲</div><div><strong>Як відкрити угоду в MT5 по кроках</strong><span>Гайд «Як читати сетапи»</span></div><div class="arr">→</div></a>
+  </section>
+
+  <section class="section">
+    <div class="section-num">03 · Сума в угоді</div>
+    <h2>Що таке лот</h2>
+    <p>До відкриття угоди ти маєш точно знати, <strong>скільки втратиш, якщо ціна дійде до стопа.</strong></p>
+    <p>На відміну від крипти, тут ми торгуємо не в доларах, а в <strong>лотах</strong>. Лот - це розмір позиції. Це НЕ сума депозиту, не розмір ризику і не плече. Лот лише визначає, <strong>наскільки сильно змінюється результат при русі ціни.</strong></p>
+    <p>У MetaTrader 1 лот = певна кількість активу, вказана в параметрі <span class="k">Contract size</span>. Його задає брокер.</p>
+
+    <h3>Валютні пари (EUR/USD)</h3>
+    <div class="tbl-wrap"><table class="tbl">
+      <thead><tr><th>Обсяг</th><th>Розмір позиції</th><th>Вартість 1 пункту</th></tr></thead>
+      <tbody>
+        <tr><td>1.00 лота</td><td>€100 000</td><td class="v">$10</td></tr>
+        <tr><td>0.10 лота</td><td>€10 000</td><td class="v">$1</td></tr>
+        <tr><td>0.01 лота</td><td>€1 000</td><td class="v">$0.10</td></tr>
+      </tbody>
+    </table></div>
+    <p class="calc-hint">Пункт - це стандартний pip, наприклад рух EUR/USD з 1.1000 до 1.1001.</p>
+    <div class="note"><h4>Приклад EUR/USD</h4>Купила EUR/USD по 1.1000, Stop Loss на 1.0950. Відстань до стопа - <strong>50 пунктів</strong>.<br>
+      1.00 лота → ризик ≈ <strong>$500</strong> · 0.10 лота → ≈ <strong>$50</strong> · 0.02 лота → ≈ <strong>$10</strong> · 0.01 лота → ≈ <strong>$5</strong><br>
+      Депозит $1 000 і допустимий ризик $10 → тобі підходить <strong>0.02 лота</strong>.</div>
+
+    <h3>Золото (XAU/USD)</h3>
+    <div class="tbl-wrap"><table class="tbl">
+      <thead><tr><th>Обсяг</th><th>Кількість золота</th><th>Результат при русі на $1</th></tr></thead>
+      <tbody>
+        <tr><td>1.00 лота</td><td>100 унцій</td><td class="v">±$100</td></tr>
+        <tr><td>0.10 лота</td><td>10 унцій</td><td class="v">±$10</td></tr>
+        <tr><td>0.01 лота</td><td>1 унція</td><td class="v">±$1</td></tr>
+      </tbody>
+    </table></div>
+    <div class="note"><h4>Приклад із золотом</h4>Купівля XAU/USD по <strong>$2 500</strong>, Stop Loss <strong>$2 490</strong>. Відстань до стопа - <strong>$10</strong>. Якщо 1 лот = 100 унцій:<br>
+      1.00 лота: $10 × 100 = <strong>$1 000</strong> ризику · 0.10 лота: <strong>$100</strong> · 0.01 лота: <strong>$10</strong><br>
+      Депозит $1 000 і допустимий ризик $10 → відкриваєш <strong>0.01 лота</strong>.</div>
+  </section>
+
+  <section class="section" id="calc">
+    <div class="section-num">04 · Калькулятор</div>
+    <h2>Порахуй свій лот</h2>
+    <div class="card calc">
+      <div class="calc-grid">
+        <div><label for="c-inst">Інструмент</label>
+          <select id="c-inst">
+            <option value="100">XAUUSD (золото)</option>
+            <option value="5000">XAGUSD (срібло)</option>
+            <option value="100000">EURUSD</option>
+            <option value="100000">GBPUSD</option>
+            <option value="100000">AUDUSD</option>
+            <option value="100000">NZDUSD</option>
+          </select></div>
+        <div><label for="c-dep">Депозит, $</label><input id="c-dep" type="number" inputmode="decimal" value="1000" min="0"></div>
+        <div><label for="c-risk">Ризик на угоду, %</label><input id="c-risk" type="number" inputmode="decimal" value="3" min="0" step="0.5"></div>
+        <div><label for="c-trades">Тейків у сетапі</label><input id="c-trades" type="number" inputmode="numeric" value="1" min="1" max="6"></div>
+        <div><label for="c-entry">Ціна входу</label><input id="c-entry" type="number" inputmode="decimal" value="4170" step="any"></div>
+        <div><label for="c-sl">Stop Loss</label><input id="c-sl" type="number" inputmode="decimal" value="4155" step="any"></div>
+      </div>
+      <div class="calc-out">
+        <div><small>Твій лот</small><b id="o-lot">-</b></div>
+        <div class="rk"><small>Ризик до стопа</small><b id="o-risk">-</b></div>
+      </div>
+      <p class="calc-hint" id="o-hint"></p>
+    </div>
+    <p class="calc-hint">Contract size у калькуляторі: золото 100, срібло 5 000, валютні пари 100 000. Якщо у твого брокера інший, дивись специфікацію інструмента в MT5.</p>
+    <a class="link-card" href="https://fxverify.com/widgets/position-size-calculator" target="_blank" rel="noopener"><div class="link-ic">🌐</div><div><strong>Запасний калькулятор fxverify</strong><span>Як ним користуватись - у відео нижче</span></div><div class="arr">→</div></a>
+    <div class="player"><video controls playsinline preload="none" poster="videos/risk-poster.jpg"><source src="videos/risk.mp4" type="video/mp4"></video></div>
+  </section>
+
+  <section class="section">
+    <div class="section-num">05 · Закриття руками</div>
+    <h2>Коли можна вийти раніше</h2>
+    <p>Іноді після входу ситуація на ринку змінюється:</p>
+    <ul class="list">
+      <li>виходять важливі новини</li>
+      <li>з'являється різкий зустрічний обсяг</li>
+      <li>ціна ламає структуру не в твій бік</li>
+      <li>рівень, від якого чекали реакцію, не втримується</li>
+      <li>початковий сценарій втрачає актуальність</li>
+    </ul>
+    <p>Тоді угоду можна закрити руками частково або повністю, або підтягнути стоп у прибуток, щоб захистити вже отриманий рух.</p>
+    <div class="hl"><div class="t">Але відрізняй ринок від страху</div><p>Об'єктивна зміна ситуації - це одне, а звичайний страх втратити відкритий прибуток - інше. Якщо сценарій актуальний, не керуй позицією на емоціях. <strong>Краще недозаробити, ніж втратити.</strong></p></div>
+  </section>
+
+  <section class="section">
+    <div class="section-num">06 · Анти-лудка</div>
+    <h2>Правило трьох угод</h2>
+    <p>Після <strong>трьох стопів поспіль</strong> хочеться терміново відігратися. Починаєш бачити входи там, де їх немає, збільшувати ризик і порушувати власні правила.</p>
+    <p>Після <strong>трьох тейків поспіль</strong> інша небезпека - відчуття, що ти вже зрозуміла ринок. Аналіз стає поверхневим, а входи імпульсивними.</p>
+    <p>Перша угода здається випадковістю, друга - збігом, а після третьої мозок уже чекає продовження серії. Статистично четверта угода не мусить бути такою самою, але твоє сприйняття вже змінилось.</p>
+    <div class="shot wide"><img src="img/three-in-row.jpg" alt="Три тейки або три стопи поспіль - пауза"></div>
+    <p><strong>Тому після трьох тейків або трьох стопів поспіль:</strong></p>
+    <ul class="list">
+      <li>закрий термінал</li>
+      <li>зроби перерву</li>
+      <li>переглянь скріншоти угод</li>
+      <li>перевір, чи дотримувалась стратегії</li>
+      <li>оціни свій емоційний стан</li>
+      <li>повертайся до торгівлі лише після повного перезавантаження</li>
+    </ul>
+  </section>
+
+  <div class="cta">
+    <h3>Торгуй разом з нами 💚</h3>
+    <p>У ком'юніті щодня сетапи з точкою входу, стопом і тейками, супровід кожної угоди і менеджер, який допоможе з першими кроками.</p>
+    <a class="btn" href="https://t.me/simba_fx_bot" target="_blank" rel="noopener">Приєднатися через @simba_fx_bot</a>
+  </div>
+</main>
+
+<footer>Simbochka FX · Симба · Торгівля пов'язана з ризиком втрати коштів. Заходьте тільки тими грошима, які готові втратити.</footer>
+
+<script>
+(function(){
+  var $=function(id){return document.getElementById(id)};
+  var ids=['c-inst','c-dep','c-risk','c-trades','c-entry','c-sl'];
+  function n(id){return parseFloat(String($(id).value).replace(',','.'))}
+  function calc(){
+    var cs=n('c-inst'),dep=n('c-dep'),rp=n('c-risk'),tp=Math.max(1,Math.round(n('c-trades'))||1),e=n('c-entry'),sl=n('c-sl');
+    var dist=Math.abs(e-sl);
+    if(!(dep>0&&rp>0&&dist>0&&cs>0)){$('o-lot').textContent='-';$('o-risk').textContent='-';$('o-hint').textContent='Заповни всі поля: вхід і стоп мають відрізнятися.';return}
+    var riskUsd=dep*rp/100, raw=riskUsd/(dist*cs);
+    var per=Math.floor(raw/tp*100+1e-9)/100;
+    var hint='';
+    if(per<0.01){per=0.01;hint='Навіть мінімальний лот 0.01 на кожен тейк дає більший ризик, ніж ти обрала. Подумай, чи заходити, або зменш кількість тейків.'}
+    var lot=Math.round(per*tp*100)/100, real=lot*dist*cs;
+    $('o-lot').textContent=lot.toFixed(2);
+    $('o-risk').textContent='$'+real.toFixed(2)+' ('+(real/dep*100).toFixed(1)+'%)';
+    if(!hint&&tp>1)hint='Відкриваєш '+tp+' позиції по '+per.toFixed(2)+' лота, кожну зі своїм тейком і спільним стопом.';
+    $('o-hint').textContent=hint;
+  }
+  ids.forEach(function(i){$(i).addEventListener('input',calc);$(i).addEventListener('change',calc)});
+  calc();
+})();
+</script>
+</body>
+</html>

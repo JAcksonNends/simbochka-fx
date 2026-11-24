@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Як читати сетапи | Simbochka FX</title>
+<meta name="description" content="Гайд для новачків ком'юніті Simbochka FX: як читати сетапи, відкривати угоди в MetaTrader 5, рахувати лот і переносити стоп у беззбиток.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f0612'/%3E%3Cg fill='%23ff4f9a'%3E%3Crect x='6' y='12' width='5' height='12' rx='1'/%3E%3Crect x='13.5' y='6' width='5' height='14' rx='1'/%3E%3Crect x='21' y='10' width='5' height='10' rx='1'/%3E%3C/g%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700;900&family=Onest:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="apple-touch-icon" href="img/icon.png">
+<meta property="og:image" content="https://jacksonnends.github.io/simbochka-fx/img/logo.jpg">
+<link rel="stylesheet" href="style.css?v=3">
+</head>
+<body>
+
+<nav class="nav"><div class="nav-in">
+  <a class="brand" href="./"><img src="img/icon.png" alt="Simbochka"><i></i><span>Simb<b>ochka</b></span></a>
+  <div class="nav-links">
+    <a class="on" href="./">Як читати сетапи</a>
+    <a href="risk.html">Ризик-менеджмент</a>
+    <a href="terminal.html">Термінал MT5</a>
+  </div>
+</div></nav>
+
+<header class="hero"><div class="hero-in">
+  <div class="tag">Simbochka · Гайд для новачків</div>
+  <h1>Як читати сетапи<br>і <span class="g">не втратити гроші</span></h1>
+  <p class="hero-sub">Більшість втрачає гроші не через поганий сетап. <strong>Вони просто заходять неправильно.</strong> Розбираємо все по кроках, без зайвого.</p>
+
+  <div class="tg">
+    <div class="tg-name">Simbochka FX</div>
+    <b>BUY XAU/USD</b><br><br>
+    📍 <span class="num">4170</span> - <span class="num">4172</span><br><br>
+    ❌ Stop loss (SL): <span class="num">4155</span><br>
+    ▶️ Take profit 1: <span class="num">4179.3</span><br>
+    ▶️ Take profit 2: <span class="num">4186.9</span><br>
+    ▶️ Take profit 3: <span class="num">4195</span><br>
+    ▶️ Take profit 4: <span class="num">4221.2</span>
+    <div class="tg-meta">👁 1.2K · 10:42</div>
+  </div>
+  <div class="annot">
+    <div><small>Пара + напрямок</small><span style="color:var(--green)">BUY XAU/USD</span></div>
+    <div><small>Точка входу 📍</small><span style="color:var(--amber)">4170-4172</span></div>
+    <div><small>Тейки ▶️</small><span style="color:var(--green)">4179.3 / 4186.9 / 4195 / 4221.2</span></div>
+    <div><small>Страховка (SL) ❌</small><span style="color:var(--red)">4155</span></div>
+  </div>
+</div></header>
+
+<main class="content">
+
+  <section class="section" id="s1">
+    <div class="section-num">01 · Розбираємо сетап</div>
+    <h2>Що це все означає</h2>
+    <p>У кожному сетапі одні й ті самі параметри. Нічого вигадувати не треба: <strong>твоє завдання просто повторити.</strong></p>
+    <div class="glossary">
+      <div class="gloss"><div class="badge entry">XAUUSD</div><div><strong>Торгова пара</strong><span>XAU = золото, USD = долар. Торгуємо ціну золота в доларах. Так само EURUSD - євро до долара, GBPUSD - фунт до долара.</span></div></div>
+      <div class="gloss"><div class="badge">BUY</div><div><strong>Купуємо, чекаємо зростання</strong><span>Заробляємо, якщо ціна йде вгору.</span></div></div>
+      <div class="gloss"><div class="badge sell">SELL</div><div><strong>Продаємо, чекаємо падіння</strong><span>Заробляємо, якщо ціна йде вниз.</span></div></div>
+      <div class="gloss"><div class="badge entry">Вхід 📍</div><div><strong>Точка входу</strong><span>Діапазон ціни, по якій заходимо. Якщо в BUY-сетапі вхід 4170-4172, а ціна вже 4180, ти запізнилась: такий сетап пропускаємо.</span></div></div>
+      <div class="gloss"><div class="badge sl">SL ❌</div><div><strong>Stop Loss - страховка</strong><span>Якщо ціна пішла не туди, угода сама закриється з невеликим мінусом. Без стопа можна втратити весь депозит за одну угоду. Ставимо завжди.</span></div></div>
+      <div class="gloss"><div class="badge">TP ▶️</div><div><strong>Take Profit - цілі</strong><span>Рівні, де фіксуємо прибуток. TP1, TP2, TP3, TP4: чим далі, тим більший профіт. На кожному тейку закривається частина позиції.</span></div></div>
+      <div class="gloss"><div class="badge">БУ</div><div><strong>Беззбиток</strong><span>Коли в каналі пишемо «стоп в БУ», переносиш Stop Loss на свою точку входу. Детально нижче.</span></div></div>
+    </div>
+  </section>
+
+  <section class="section" id="s2">
+    <div class="section-num">02 · Відкриваємо угоду</div>
+    <h2>Алгоритм у MetaTrader 5</h2>
+    <p>Торгуємо через додаток MT5 (App Store або Google Play), підключений до твого рахунку. Як встановити і увійти - у гайді <a href="terminal.html">«Термінал MT5»</a>.</p>
+
+    <div class="steps"><div class="step"><div class="step-n">1</div><div class="step-body"><strong>Знаходиш актив у котируваннях</strong><span>Відкриваєш розділ <b>Quotes</b>, знаходиш <b>XAUUSD</b> (або пару із сетапу) і натискаєш на неї.</span></div><div></div></div></div>
+    <div class="shot"><img src="img/quotes-trade.jpg" alt="MT5: вибір активу"><div class="shot-cap">Натискаєш на <strong>XAUUSD</strong> → обираєш <strong>Trade</strong></div></div>
+
+    <div class="steps"><div class="step"><div class="step-n">2</div><div class="step-body"><strong>Виставляєш лот</strong><span>Обсяг позиції рахуєш калькулятором у гайді <a href="risk.html#calc">«Ризик-менеджмент»</a>. Натискаєш на цифру в центрі і змінюєш. Не бери максимум.</span></div><div></div></div></div>
+    <div class="shot"><img src="img/lot.jpg" alt="MT5: лот"><div class="shot-cap"><strong>Лот (обсяг)</strong> - цифра в центрі. <span class="warn">Ціни на скрині інші, ніж у сетапі вище: це просто приклад інтерфейсу.</span></div></div>
+
+    <div class="steps"><div class="step"><div class="step-n">3</div><div class="step-body"><strong>Вводиш SL і TP із сетапу</strong><span>Натискаєш на поле Stop Loss і вводиш цифру із сетапу. Те саме з Take Profit. <b>Строго як написано, нічого не змінюєш.</b></span></div><div></div></div></div>
+    <div class="shot"><img src="img/sl-tp.jpg" alt="MT5: SL і TP"><div class="shot-cap">Вводиш <span class="warn">Stop Loss</span> і <span class="ok">Take Profit</span> точно як у сетапі. На скрині вони вже заповнені.</div></div>
+
+    <div class="steps"><div class="step"><div class="step-n">4</div><div class="step-body"><strong>Натискаєш Buy by Market або Sell by Market</strong><span>Залежно від напрямку сетапу. Все, угода відкрита.</span></div><div></div></div></div>
+    <div class="shot"><img src="img/close-confirm.jpg" alt="MT5: кнопки угоди"><div class="shot-cap">Помаранчева кнопка внизу закриває <strong>вже відкриту</strong> позицію і з'являється лише тоді, коли вона є. Нова угода відкривається кнопками <strong>Sell / Buy by Market</strong>.</div></div>
+  </section>
+
+  <section class="section" id="s3">
+    <div class="section-num">03 · Закриваємо позицію</div>
+    <h2>Як закрити угоду вручну</h2>
+    <p>Тейки і стоп спрацьовують самі. Але якщо треба вийти раніше або закрити частину позиції:</p>
+    <div class="pair">
+      <div class="shot"><img src="img/close-position.jpg" alt="Close position"><div class="shot-cap">Розділ <strong>Trade</strong> → натискаєш на угоду → <strong class="ok">Close position</strong></div></div>
+      <div class="shot"><img src="img/modify-position.jpg" alt="Modify position"><div class="shot-cap">Змінити SL або TP - <strong>Modify position</strong>. Так само переносимо стоп у беззбиток.</div></div>
+    </div>
+    <div class="note"><strong>Позиції на скринах - для прикладу.</strong> Цифри можуть відрізнятися від реального сетапу, тут показана лише механіка.</div>
+  </section>
+
+  <section class="section" id="s4">
+    <div class="section-num">04 · Розмір лота</div>
+    <h2>Скільки ставити на угоду</h2>
+    <p>Лот - це обсяг позиції. На золоті при лоті <strong>0.01</strong> кожен $1 руху ціни = <strong>$1</strong> прибутку або збитку. При лоті 0.1 - вже $10.</p>
+    <p>Тому лот рахуємо від стопа: спочатку вирішуєш, скільки готова втратити (2-5% депозиту), потім ділиш на відстань до стопа.</p>
+    <div class="tbl-wrap"><table class="tbl">
+      <thead><tr><th>Депозит</th><th>Ризик 3%</th><th>Лот при стопі $15</th></tr></thead>
+      <tbody>
+        <tr><td>$300</td><td>$9</td><td class="v">0.01*</td></tr>
+        <tr><td>$500</td><td>$15</td><td class="v">0.01</td></tr>
+        <tr><td>$1 000</td><td>$30</td><td class="v">0.02</td></tr>
+        <tr><td>$2 000</td><td>$60</td><td class="v">0.04</td></tr>
+        <tr><td>$3 000</td><td>$90</td><td class="v">0.06</td></tr>
+        <tr><td>$5 000</td><td>$150</td><td class="v">0.10</td></tr>
+      </tbody>
+    </table></div>
+    <p class="calc-hint">* 0.01 - мінімальний лот. На $300 ризик буде трохи більший за 3% (~5%).</p>
+    <a class="link-card" href="risk.html#calc"><div class="link-ic">🧮</div><div><strong>Калькулятор лота</strong><span>Вводиш депозит, ризик, вхід і стоп - отримуєш лот</span></div><div class="arr">→</div></a>
+    <div class="note"><strong>Якщо тейків кілька</strong>, лот ділиш порівну. Зайшла 0.08 з чотирма тейками → по 0.02 на кожен. Ціна дійшла до TP1 - закрилась чверть позиції, решта йде далі.</div>
+  </section>
+
+  <section class="section" id="s5">
+    <div class="section-num">05 · Беззбиток</div>
+    <h2>Що означає «стоп в БУ»</h2>
+    <p>Іноді в каналі пишемо: <strong>«Переносимо стоп у беззбиток»</strong>. Ось як це робиться:</p>
+    <div class="hl"><div class="t">💡 Логіка проста</div><p>SELL по золоту, вхід <strong>4706</strong>, стоп <strong>4725</strong>. Ціна взяла TP1 на <strong>4701</strong>, перший прибуток уже забрали. Відкриваєш позицію → <strong>Modify position</strong> → змінюєш Stop Loss з <strong>4725</strong> на <strong>4706</strong> (точку входу). Тепер, навіть якщо ціна розвернеться, ти в нулі. А якщо піде далі - беремо TP2, TP3, TP4.</p></div>
+    <div class="pair">
+      <div class="shot"><img src="img/modify-open.jpg" alt="Modify position"><div class="shot-cap">Натискаєш на угоду → <strong>Modify position</strong></div></div>
+      <div class="shot"><img src="img/modify-sl.jpg" alt="Стоп на точку входу"><div class="shot-cap">Ставиш Stop Loss на <strong>ціну входу</strong> → <strong>Modify</strong>. Все, ти в беззбитку.</div></div>
+    </div>
+    <div class="tg" style="margin-top:20px">
+      <div class="tg-quote"><b>Simbochka FX</b>SELL XAUUSD 📍 4706-4708 ✅ Take profit 1: 4701 ✅ Take profit 2...</div>
+      Якщо у вас консервативна торгівля, переносьте стоп лосс по XAUUSD у беззбиток. Якщо ризик-менеджмент дозволяє, тримайте позицію далі.
+      <div class="tg-meta">👁 980 · 11:04</div>
+    </div>
+    <p style="text-align:center;font-size:13px;margin-top:12px">Так виглядає повідомлення в каналі</p>
+  </section>
+
+  <section class="section" id="s6">
+    <div class="section-num">06 · Ризик</div>
+    <h2>Це важливіше за самі сетапи</h2>
+    <p>Можна мати круті сетапи і все одно злити депозит, якщо не стежити за ризиком. <strong>На одну угоду - не більше 2-5% депозиту.</strong></p>
+    <div class="risk">
+      <div class="risk-item"><div class="risk-pct" style="color:var(--green)">1-2%</div><div class="risk-bar-wrap"><div class="risk-bar" style="width:15%;background:var(--green)"></div></div><div class="risk-label" style="color:var(--green)">Консервативно</div></div>
+      <div class="risk-item"><div class="risk-pct" style="color:var(--amber)">2-5%</div><div class="risk-bar-wrap"><div class="risk-bar" style="width:35%;background:var(--amber)"></div></div><div class="risk-label" style="color:var(--amber)">Наш стандарт</div></div>
+      <div class="risk-item"><div class="risk-pct" style="color:var(--orange)">5-10%</div><div class="risk-bar-wrap"><div class="risk-bar" style="width:65%;background:var(--orange)"></div></div><div class="risk-label" style="color:var(--orange)">Небезпечно</div></div>
+      <div class="risk-item"><div class="risk-pct" style="color:var(--red)">10%+</div><div class="risk-bar-wrap"><div class="risk-bar" style="width:100%;background:var(--red)"></div></div><div class="risk-label" style="color:var(--red)">Казино 😬</div></div>
+    </div>
+    <div class="warn-block">Стоп лосс обов'язковий. Завжди. Без винятків. <strong>Не намагайся «пересидіти» збиток</strong> - це найшвидший спосіб обнулити рахунок.</div>
+    <a class="link-card" href="risk.html"><div class="link-ic">🛡</div><div><strong>Повний гайд з ризик-менеджменту</strong><span>Точка входу, стоп, лот, закриття руками, анти-лудка</span></div><div class="arr">→</div></a>
+  </section>
+
+  <section class="section" id="s7">
+    <div class="section-num">07 · Запізнилась</div>
+    <h2>Що робити, якщо пропустила вхід</h2>
+    <p>Буває: не дивилась у телефон, а ціна вже пішла. Без паніки.</p>
+    <div class="grid2">
+      <div class="mini-card bad"><h4>Ціна пішла в профіт без тебе</h4><p>Далі ніж на $2-3 від входу - пропускаємо. Стоп стає далеко, ризик більший, а прибуток менший.</p></div>
+      <div class="mini-card ok"><h4>Ціна трохи пішла проти</h4><p>Але ще не дійшла до стопа - можна заходити: ризик навіть менший, ніж у сетапі.</p></div>
+    </div>
+    <div class="note">Пропущений сетап - це не втрата. Втрата - це стрибнути в потяг, що вже поїхав, і вийти в мінус. Сетапи приходять щодня.</div>
+  </section>
+
+  <div class="cta">
+    <h3>Все зрозуміло - що далі? 🤝</h3>
+    <p>У ком'юніті ми з командою щодня даємо сетапи в реальному часі, пояснюємо кожен вхід і супроводжуємо угоду до закриття.</p>
+    <a class="btn" href="https://t.me/simba_fx_bot" target="_blank" rel="noopener">Приєднатися через @simba_fx_bot</a>
+  </div>
+</main>
+
+<footer>Simbochka FX · Симба · Торгівля пов'язана з ризиком втрати коштів. Заходьте тільки тими грошима, які готові втратити.</footer>
+</body>
+</html>
